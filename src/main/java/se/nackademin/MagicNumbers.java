@@ -10,12 +10,15 @@ public class MagicNumbers {
 
     public int calculateA() {
         int number = 0;
+        if(name.length() > 0) {
+            number++;
+        }
         for(char c : name.toCharArray()) {
             if(c == ' ') {
                 number++;
             }
         }
-        number += income;
+        number += age;
         while(number > 9) {
             number -= 7;
         }
